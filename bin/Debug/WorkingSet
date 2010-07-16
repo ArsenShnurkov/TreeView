@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<dsWorkingSet>
+  <WorkingSet>
+    <ID>9b3000da-21d3-4714-b1d1-24cadfe80211</ID>
+    <Name>test</Name>
+    <NumChildren>3</NumChildren>
+  </WorkingSet>
+  <WorkingSetLinks>
+    <WorkingSetID>9b3000da-21d3-4714-b1d1-24cadfe80211</WorkingSetID>
+    <LinkID>{2ABE78DD-33C5-431B-8B1E-F05C6BEA50F9}{1}{B0}</LinkID>
+  </WorkingSetLinks>
+  <WorkingSetLinks>
+    <WorkingSetID>9b3000da-21d3-4714-b1d1-24cadfe80211</WorkingSetID>
+    <LinkID>{7B723990-3D84-4AE1-A52D-A2C690A64B20}{1}{B0}</LinkID>
+  </WorkingSetLinks>
+  <WorkingSetLinks>
+    <WorkingSetID>9b3000da-21d3-4714-b1d1-24cadfe80211</WorkingSetID>
+    <LinkID>{A353759A-1143-491E-A0F6-8F8266EA7E7C}{1}{B0}</LinkID>
+  </WorkingSetLinks>
+</dsWorkingSet>

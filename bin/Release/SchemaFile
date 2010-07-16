@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsWorkingSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="dsWorkingSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkingSet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="NumChildren" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WorkingSetLinks">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkingSetID" type="xs:string" />
+              <xs:element name="LinkID" type="xs:string" />
+              <xs:element name="LinkNodeType" msdata:DataType="TreeView4.NodeTypes, TreeView4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" type="xs:anyType" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//WorkingSet" />
+      <xs:field xpath="ID" />
+    </xs:unique>
+    <xs:unique name="WorkingSetLinks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//WorkingSetLinks" />
+      <xs:field xpath="WorkingSetID" />
+      <xs:field xpath="LinkID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
